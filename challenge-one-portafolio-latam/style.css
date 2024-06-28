@@ -1,0 +1,488 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #013026;
+   --cor-de-link: #000;
+   --cor-de-texto: #FFFF;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway', Helvetica;
+    line-height: 1;
+    color: var(--cor-de-texto);
+}
+
+ol, ul,li {
+    list-style: none;
+    padding: 0%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+h2 {
+    margin: 0;
+}
+h3 {
+    color: #ffffff;
+}
+h4 {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+section.menu{
+display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: #107E57;
+  border-radius: 10px;
+  align-items: center;
+  white-space: nowrap
+}
+
+.menu__header{
+}
+
+.menu__title{
+
+}
+.menu__list{
+    display: none;
+
+}
+
+/*Sección Title HERO*/
+
+section.title{
+
+
+}
+
+.title__div{
+    
+}
+
+.title__container {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    font-family: Arial, sans-serif;
+    font-size: 60%;
+    line-height: normal;
+    padding: 10px;
+
+}
+
+.title__bio{
+    flex-direction: row;
+    text-align: right; 
+    align-self: flex-end;
+}
+.title__profile {
+    max-width: 120px; /* limits image size */
+    position: relative;
+    align-self: center;
+}
+.title__profile__item{
+    display: none;
+}
+
+.title__subsection {
+    text-align: justify;
+}
+
+.title__network {
+    display: flex;
+    align-content: space-evenly; 
+    justify-content:center;   
+    flex-wrap: wrap;
+    font-family: "Raleway", Helvetica;
+    font-weight: 600;
+    gap: 10%;
+}
+
+.title__network__item {
+position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Raleway", Helvetica;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+/*Sección About*/
+section.about{
+    gap: 30px;
+    padding: 13px 12px 19px;
+    background-color: #107E57;
+    border-radius: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 4px #00000040;
+    font-size: small;
+}
+
+section.skills{
+justify-content: center;
+}
+
+.skills__title{
+}
+/*Sección Hobbies*/
+.skills__line{
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 70;
+}
+
+.skills__box{
+display: flex;
+background-color: #ffffff;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+width: 100px;
+margin-bottom: 30px;
+
+}
+
+.skills__img{
+    display: flex;
+    align-items: center;  
+    margin: 0;
+    padding: 50;  
+}
+
+
+section.hobbies{
+    display: flex;
+    flex-direction: column;
+}
+
+.hobbies__line{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    color: #000;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+.hobbies__box{
+display: flex;
+background-color: #ffffff;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+width: 100px;
+margin-bottom: 30px;
+
+}
+
+/* Experiencia Académica*/
+
+section.academic{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+/* Element: Title within the academic block */
+.academic__title {
+
+}
+
+
+/* Element: Container for all courses */
+.academic__courses {
+    display:inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+/* Element: Individual box for each course */
+.academic__courses__box {
+    width:190px;
+}
+
+/* Element: List of courses */
+.academic__courses__list {
+
+}
+
+/* Element: Item image in courses list */
+.academic__courses__item__img {
+
+}
+
+/* Element: Course title in courses list */
+.academic__courses__item__title {
+    display: inline-flex;
+    width: auto;
+
+}
+
+/* Element: Course subtitle in courses list */
+.academic__courses__item__subtitle {
+
+}
+
+
+/* experiencia*/
+
+section.experience{
+
+}
+
+.experience__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px;
+}
+
+.experiencie__box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 200px;
+
+}
+.experience__img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+}
+.experience__info{
+    width: inherit;
+}
+.experience__title{
+    font-size: medium;
+    flex-wrap: wrap;
+}
+.experience__text{
+    font-size: small;
+    flex-wrap: wrap;
+}
+
+/* <div class="experience__list">
+            <div class="experiencie__box">
+                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+                <img class="experience__img" src="assets\decod_print.png">
+                <div class="experience__info"
+                    <h2 class="experience__title">Encriptador de texto</h2>
+                    <h3 class="experience__text">Challenge Alura Codificador </h3>
+                        <div class="experience__description">
+                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                                <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                                <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                        </div>
+                </div>
+            </div>   */
+
+
+/*Contacto*/
+
+section.formcontato{
+
+}
+
+/*footeer*/
+
+section.footer{
+   
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+  @media (max-width: 767px) {
+
+  
+  }
+  
+  @media (min-width: 768px) and (max-width: 1439px) {
+    .menu__list {
+        display: inline-flex;
+        align-items: end;
+        gap: 5%;
+    }
+    .menu__list__item__contato{
+        display: none !important;
+    }
+
+    .title__div{
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 32px;
+        padding: 32px;
+    }
+
+    .title__container {
+        flex-direction: column;
+        gap: 8px;
+        position: relative;
+    }
+
+    .title__bio{
+        position: relative;
+        align-self: stretch;
+        margin-top: -1px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: var(--preto-100);
+        font-size: 22px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+
+    .title__subsection{
+        position: relative;
+        align-self: stretch;
+        font-family: "Raleway-Regular", Helvetica;
+        font-weight: 400;
+        color: var(--preto-100);
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+
+    .title__profile {
+        display: none;
+    }
+
+    .title__profile__item{
+        display: block;
+        object-fit: cover;
+        width: 30%;
+        height: 30%;
+      } 
+
+    .title__network {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        position: relative;
+    }
+
+    .title__network__item {
+          font-size: 15px;
+          letter-spacing: 0;
+        }
+        
+    .about__container{
+        font-size:medium;
+        padding: 1%;
+    }
+    .academic__courses{
+        justify-content: space-evenly;
+    }
+}
+  
+  @media (min-width: 1440px) {
+    .menu__list {
+        display: inline-flex;
+        align-items: end;
+        gap: 5%;
+    }
+    .menu__list__item__contato{
+        display: none !important;
+      }
+
+    .title__div{
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 32px;
+        padding: 32px;
+    }
+
+    .title__container {
+        flex-direction: column;
+        gap: 8px;
+        position: relative;
+        
+    }
+
+    .title__bio{
+        position: relative;
+        align-self: stretch;
+        margin-top: -1px;
+        font-family: "Raleway-Bold", Helvetica;
+        font-weight: 700;
+        color: var(--preto-100);
+        font-size: 22px;
+        letter-spacing: 0;
+        line-height: normal;
+        font-size: 52px;
+    }
+
+    .title__subsection{
+        font-size: 25px ;
+        font-weight: 200;
+    }
+    
+   
+    .title__profile {
+        display: none;
+    }
+    .title__profile__item{
+        display: block;
+        object-fit: cover;
+        max-width: 25%;
+        max-height: 5%;
+      } 
+
+    .title__network {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        gap: 10%;
+        font-family: "Raleway", Helvetica;
+        font-weight: 600;
+    }
+   
+   
+  }
+  
